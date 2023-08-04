@@ -1,0 +1,11 @@
+.image-list{
+  columns: 6 200px;
+  column-gap: 10px;
+}
+
+img{
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
