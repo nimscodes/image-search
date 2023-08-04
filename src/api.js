@@ -1,9 +1,11 @@
 import axios from 'axios';
+// require('dotenv').config();
+
 
 const searchImages = async(term) => {
   const response = await axios.get('https://api.unsplash.com/search/photos', {
     headers: {
-      Authorization: 'Client-ID RMXjxaRdh_fLRI2C5epDRWvTPe18gQIRrDbPLRpeevI',
+      Authorization: process.env.REACT_APP_UNSPLASH_API
     },
     params: {
       query: term,
